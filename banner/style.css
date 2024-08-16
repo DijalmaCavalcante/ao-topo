@@ -26,7 +26,7 @@
 }
 
 .banner_logo {
-  width: 130% !important;
+  width: 130%;
 }
 
 @media(width >= 500px) {
