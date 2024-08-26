@@ -1,0 +1,14 @@
+{
+  "name": "ao-topo",
+  "module": "index.ts",
+  "type": "module",
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@bake-js/-o-id": "^0.0.42"
+  }
+}
