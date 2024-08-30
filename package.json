@@ -9,6 +9,17 @@
     "typescript": "^5.0.0"
   },
   "dependencies": {
-    "@bake-js/-o-id": "^0.0.42"
-  }
+    "@bake-js/-o-id": "^0.0.42",
+    "vite": "^5.4.2",
+    "artifact": "workspace:*",
+    "element": "workspace:*",
+    "pixel": "workspace:*",
+    "standard": "workspace:*"
+  },
+  "scripts": {
+    "dev": "vite"
+  },
+  "source": "src/index.js",
+  "version": "0.0.1",
+  "workspaces": ["packages/*"]
 }
