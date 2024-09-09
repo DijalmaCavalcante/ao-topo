@@ -9,7 +9,7 @@
     "typescript": "^5.0.0"
   },
   "dependencies": {
-    "@bake-js/-o-id": "^0.0.42",
+    "@bake-js/-o-id": "*",
     "vite": "^5.4.2",
     "artifact": "workspace:*",
     "element": "workspace:*",
