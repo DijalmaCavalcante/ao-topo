@@ -1,8 +1,5 @@
 import { html } from '@bake-js/-o-id/dom';
-import background from '../../assets/videos/ribeirao-pires-2024.mp4'
-import instagram from '../../assets/social/instagram.svg'
-import spotify from '../../assets/social/spotify.svg'
-import logo from '../../assets/logo.png'
+import background from './videoBack.mp4'
 
 function component () {
   return html`
@@ -12,14 +9,10 @@ function component () {
         Seu navegador não suporta a exibição deste vídeo.
       </video>
       <div class="banner_container">
-        <img class="banner_logo" src="${logo}" />
+        <at-logo></at-logo>
         <div class="banner_social">
-          <a class="banner_midia" href="https://www.instagram.com/oficialaotopo/" target="_blank">
-            <img src="${instagram}" />
-          </a>
-          <a class="banner_midia" href="https://www.instagram.com/oficialaotopo/" target="_blank">
-            <img src="${spotify}" />
-          </a>
+          <at-social type="instagram"></at-social>
+          <at-social type="spotify"></at-social>
         </div>
       </div>
   </section>
