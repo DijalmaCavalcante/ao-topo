@@ -15,7 +15,7 @@ function component () {
           <at-social type="spotify"></at-social>
         </div>
       </div>
-  </section>
+    </section>
   `
 
 }

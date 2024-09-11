@@ -24,45 +24,13 @@ function style () {
       justify-content: center;
       height: 100%;
       text-align: center;
-    }
-
-    .banner_logo {
-      width: 130%;
-    }
-
-    @media(width >= 500px) {
-      .banner_logo {
-        width: 100%;
-      }
-    }
-
-    @media(width >= 768px) {
-      .banner_logo {
-        width: 70%;
-      }
-    }
-
-    @media(width >= 1000px) {
-      .banner_logo {
-        width: 60%;
-      }
-    }
-
-    @media(width >= 1200px) {
-      .banner_logo {
-        width: 50%;
-      }
+      z-index: 1;
     }
 
     .banner_social {
       display: flex;
       gap: var(--spacing_inset-xs);
-    }
-
-    .banner_social {
-      img {
-        width: 16px;
-      }
+      z-index: 2;
     }
 `
 }

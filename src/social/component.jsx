@@ -1,17 +1,17 @@
 import { html } from '@bake-js/-o-id/dom';
-import instagramImage from './instagram.svg'
-import spotifyImage from './spotify.svg'
+import instagramImage from './instagramBranco.png'
+import spotifyImage from './spotifyBranco.png'
 
 function component (self) {
   const instagram = html`
-    <a class="banner_midia" href="https://www.instagram.com/oficialaotopo/" target="_blank">
-      <img src="${instagramImage}" />
+    <a href="https://www.instagram.com/oficialaotopo/" target="_blank">
+      <img class="social" src="${instagramImage}" />
     </a>
   `
 
   const spotify = html`
-    <a class="banner_midia" href="https://www.instagram.com/oficialaotopo/" target="_blank">
-      <img src="${spotifyImage}" />
+    <a href="https://www.instagram.com/oficialaotopo/" target="_blank">
+      <img class="social" src="${spotifyImage}" />
     </a>
   `
 

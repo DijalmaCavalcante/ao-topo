@@ -1,9 +1,10 @@
 import { paint, repaint } from '@bake-js/-o-id/dom';
 import component from './component'
 import { attributeChanged, define } from '@bake-js/-o-id';
+import style from './style'
 
 @define('at-social')
-@paint(component)
+@paint(component, style)
 class Social extends HTMLElement {
   #type
 
