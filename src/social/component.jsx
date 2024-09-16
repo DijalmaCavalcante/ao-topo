@@ -4,14 +4,14 @@ import spotifyImage from './spotifyBranco.png'
 
 function component (self) {
   const instagram = html`
-    <a href="https://www.instagram.com/oficialaotopo/" target="_blank">
-      <img class="social" src="${instagramImage}" />
+    <a class="social" href="https://www.instagram.com/oficialaotopo/" target="_blank">
+      <img class="social_image" src="${instagramImage}" />
     </a>
   `
 
   const spotify = html`
-    <a href="https://www.instagram.com/oficialaotopo/" target="_blank">
-      <img class="social" src="${spotifyImage}" />
+    <a class="social href="https://www.instagram.com/oficialaotopo/" target="_blank">
+      <img class="social_image" src="${spotifyImage}" />
     </a>
   `
 
