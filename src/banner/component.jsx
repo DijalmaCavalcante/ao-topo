@@ -1,13 +1,10 @@
 import { html } from '@bake-js/-o-id/dom';
-import background from './videoBack.mp4'
+import background from './background.png'
 
 function component () {
   return html`
     <section class="banner">
-      <video class="banner_video" autoplay loop muted playsinline>
-        <source src="${background}" type="video/mp4">
-        Seu navegador não suporta a exibição deste vídeo.
-      </video>
+      <img class="banner_video" src="${background}" />
       <div class="banner_container">
         <at-logo></at-logo>
         <div class="banner_social">

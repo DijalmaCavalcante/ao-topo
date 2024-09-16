@@ -14,8 +14,7 @@
     "artifact": "workspace:*",
     "element": "workspace:*",
     "pixel": "workspace:*",
-    "standard": "workspace:*",
-    "assets": "workspace:*"
+    "standard": "workspace:*"
   },
   "scripts": {
     "dev": "vite"

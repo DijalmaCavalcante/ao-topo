@@ -6,7 +6,10 @@ import style from './style'
 @define('at-logo')
 @paint(component, style)
 class Logo extends HTMLElement {
-
+  constructor () {
+    super()
+    this.attachShadow({ mode: "open" })
+  }
 }
 
 export default Logo

@@ -15,6 +15,7 @@ function style () {
       height: 100%;
       object-fit: cover;
       z-index: -1;
+      filter: brightness(0.5);
     }
 
     .banner_container {
@@ -25,6 +26,8 @@ function style () {
       height: 100%;
       text-align: center;
       z-index: 1;
+      position: absolute;
+      top: 0;
     }
 
     .banner_social {

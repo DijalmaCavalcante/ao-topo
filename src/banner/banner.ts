@@ -7,7 +7,10 @@ import style from "./style"
 @define('at-banner')
 @paint(component, style)
 class Banner extends HTMLElement {
-
+  constructor () {
+    super()
+    this.attachShadow({ mode: "open" })
+  }
 }
 
 export default Banner
