@@ -2,8 +2,10 @@ import { css } from '@bake-js/-o-id/dom'
 
 function style () {
   return css`
-    .songBackground {
-      width: 28px;
+    .musicname {
+      display: flex;
+      flex-direction: column;
+      font-family: 'maven pro';
     }
 `
 }

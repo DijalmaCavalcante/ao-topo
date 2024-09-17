@@ -5,7 +5,11 @@ function component () {
     <section class="hit">
       <div class="hit__container">
         <div class="hit__audio">
-          <at-songBackground></at-songBackground>
+          <at-cover></at-cover>
+          <div>
+            <at-musicname></musicname>
+            <span>teste</span>
+          </div>
         </div>
       </div>
     </section>

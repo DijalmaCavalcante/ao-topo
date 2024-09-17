@@ -3,13 +3,13 @@ import component from './component'
 import { define } from '@bake-js/-o-id';
 import style from './style'
 
-@define('at-songBackground')
+@define('at-musicname')
 @paint(component, style)
-class SongBackground extends HTMLElement {
+class Musicname extends HTMLElement {
   constructor () {
     super()
     this.attachShadow({ mode: "open" })
   }
 }
 
-export default SongBackground
+export default Musicname
