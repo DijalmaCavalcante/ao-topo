@@ -1,3 +1,5 @@
 import "./banner"
 import "./logo"
 import "./social"
+import "./hit"
+import "./songBackground"
