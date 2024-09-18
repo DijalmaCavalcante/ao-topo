@@ -53,4 +53,25 @@
   --color-master-light: #777777;
   --color-master-lighter: #A2A2A2;
   --color-master-lightest: #D0D0D0;
+
+  --color-pure-white: #fff;
+  --color-pure-black: #000;
+}
+
+:root {
+  --font-family-principal: 'maven pro'
+}
+
+:root {
+  --font-size-nano: 1.2rem;
+  --font-size-xs: 1.6rem;
+  --font-size-sm: 2.4rem;
+  --font-size-md: 2.8rem;
+  --font-size-lg: 4.8rem;
+}
+
+:root {
+  --font-weight-bold: 700;
+  --font-weight-medium: 500;
+  --font-weight-regular: 400;
 }

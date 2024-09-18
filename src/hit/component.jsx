@@ -4,13 +4,7 @@ function component () {
   return html`
     <section class="hit">
       <div class="hit__container">
-        <div class="hit__audio">
-          <at-cover></at-cover>
-          <div>
-            <at-musicname></musicname>
-            <span>teste</span>
-          </div>
-        </div>
+        <at-infomusic></at-infomusic>
       </div>
     </section>
   `

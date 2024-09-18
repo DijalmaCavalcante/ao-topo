@@ -3,6 +3,17 @@ import background from './background.jpg'
 
 function style () {
   return css`
+    .hit__container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: rgba(255, 255, 255, 0.1);
+      width: 80%;
+      height: 350px;
+      border-radius: 9px;
+      padding: 0 var(--spacing_inset-xs);
+    }
+
     .hit {
       align-items: center;
       background-image: url(${background});
@@ -14,20 +25,11 @@ function style () {
       overflow: hidden;
       width: 100%;
     }
-    .hit_container {
-      width: 100%;
-      padding: 10px;
-    }
-
-    .hit__audio {
-      background-color: rgba(255, 255, 255, 0.1);
-      border-radius: 8px;
-      height: 350px;
-      padding: var(--spacing_inset-xs) var(--spacing_inset-giant);
-      width: 1280px;
-      display: flex;
-      align-items: center;
-      gap: var(--spacing_inset-xs);
+    
+    @media(width >= 768px) {
+      .hit__container {
+        align-items: center;
+      }
     }
 `
 }

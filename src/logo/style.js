@@ -3,7 +3,7 @@ import { css } from '@bake-js/-o-id/dom'
 function style () {
   return css`
     .banner_logo {
-      max-width: 130%;
+      width: 500px;
       z-index: 1;
     }
 
