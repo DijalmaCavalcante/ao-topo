@@ -4,27 +4,59 @@ function style () {
   return css`
     .infomusic {
       display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
+      padding: var(--spacing_inset-xs);
       width: 100%;
     }
 
+    .infomusic__container {
+      display: flex;
+      gap: var(--spacing_inset-xs);
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: var(--spacing_inset-xs);
+    }
+
+    @media(width >= 768px) {
+      .infomusic__container {
+        flex-direction: row;
+      }
+    }
+
     .infomusic__image {
-      width: 200px;
+      width: 150px;
       border-radius: 12px;
     }
 
-    .infomusic__musicname {
-      padding-top: var(--spacing_inset-xs);
+    .infomusic__informations {
       display: flex;
       flex-direction: column;
-      gap: var(--spacing_inset-nano);
+      gap: var(--spacing_inset-xs);
+      align-items: center;
+    }
+
+    @media(width >= 768px) {
+      .infomusic__informations {
+        align-items: start;
+        justify-content: space-between;
+        height: 100%;
+      }
+    }
+
+    .infomusic__musicname {
+      display: flex;
+      flex-direction: column;
       align-items: center;
 
       span {
         font-family: var(--font-family-principal);
         color: var(--color-pure-white);
+      }
+    }
+
+    @media(width >= 768px) {
+      .infomusic__musicname {
+        align-items: start;
       }
     }
 

@@ -3,17 +3,6 @@ import background from './background.jpg'
 
 function style () {
   return css`
-    .hit__container {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background-color: rgba(255, 255, 255, 0.1);
-      width: 80%;
-      height: 350px;
-      border-radius: 9px;
-      padding: 0 var(--spacing_inset-xs);
-    }
-
     .hit {
       align-items: center;
       background-image: url(${background});
@@ -26,9 +15,20 @@ function style () {
       width: 100%;
     }
     
+    .hit__container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: rgba(255, 255, 255, 0.1);
+      width: 80%;
+      height: 350px;
+      border-radius: 9px;
+      padding: 0 var(--spacing_inset-xs);
+    }
+
     @media(width >= 768px) {
       .hit__container {
-        align-items: center;
+        justify-content: start;
       }
     }
 `
