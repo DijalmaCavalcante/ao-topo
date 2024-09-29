@@ -11,7 +11,7 @@ function component () {
         <div class="infomusic__details">
           <div class="infomusic__name">
             <span class="infomusic__title">Fazer valer</span>
-            <span class="infomusic__bandname">Ao Topo!</span>
+            <span class="infomusic__bandname">Ao Topo</span>
           </div>
           <div class="infomusic__player">
             <div class="infomusic__streams">
