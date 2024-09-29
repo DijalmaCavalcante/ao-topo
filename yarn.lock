@@ -2,7 +2,7 @@
 # yarn lockfile v1
 
 
-"@bake-js/-o-id@*":
+"@bake-js/-o-id@^0.0.65":
   version "0.0.65"
   resolved "https://registry.yarnpkg.com/@bake-js/-o-id/-/-o-id-0.0.65.tgz#64606774601116608dc531a60dd0e829bf989628"
   integrity sha512-z4e+lEZmzmXn0Vadjd+s/RiRkPIGkMKascvu49gd+3IFjz551ghfEpG5xVD4f3xpO9OWpbuk6RfyBGq1N0/Uew==

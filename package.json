@@ -8,7 +8,7 @@
 
   },
   "dependencies": {
-    "@bake-js/-o-id": "*"
+    "@bake-js/-o-id": "^0.0.65"
   },
   "scripts": {
     "dev": "vite",
