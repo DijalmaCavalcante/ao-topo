@@ -28,7 +28,7 @@ function style () {
       border-radius: 12px;
     }
 
-    .infomusic__informations {
+    .infomusic__details {
       display: flex;
       flex-direction: column;
       gap: var(--spacing_inset-xs);
@@ -36,14 +36,14 @@ function style () {
     }
 
     @media(width >= 768px) {
-      .infomusic__informations {
+      .infomusic__details {
         align-items: start;
         justify-content: space-between;
         height: 100%;
       }
     }
 
-    .infomusic__musicname {
+    .infomusic__name {
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -55,7 +55,7 @@ function style () {
     }
 
     @media(width >= 768px) {
-      .infomusic__musicname {
+      .infomusic__name {
         align-items: start;
       }
     }
@@ -67,6 +67,7 @@ function style () {
 
     .infomusic__bandname {
       font-size: var(--font-size-nano);
+      margin-bottom: 10px;
     }
     
     @media(width >= 768px) {
@@ -101,6 +102,28 @@ function style () {
       .infomusic__bandname {
         font-size: var(--font-size-nano);
       }
+    }
+
+    .infomusic__player {
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+      gap: var(--spacing_inset-sm);
+    }
+
+    @media(width >= 768px) {
+      .infomusic__player {
+        height: 168px;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: start;
+        gap: 0;
+      }
+    }
+
+    .infomusic__streams {
+      display: flex;
+      gap: var(--spacing_inset-xs);
     }
 `
 }
