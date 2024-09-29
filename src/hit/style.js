@@ -9,10 +9,10 @@ function style () {
       background-repeat: round;
       background-size: cover;
       display: flex;
-      height: 50vh;
       justify-content: center;
       overflow: hidden;
       width: 100%;
+      padding: 50px 0;
     }
     
     .hit__container {
@@ -21,7 +21,6 @@ function style () {
       align-items: center;
       background-color: rgba(255, 255, 255, 0.1);
       width: 80%;
-      height: 350px;
       border-radius: 9px;
       padding: 0 var(--spacing_inset-xs);
     }
