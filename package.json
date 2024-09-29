@@ -3,7 +3,9 @@
   "module": "index.ts",
   "type": "module",
   "devDependencies": {
-    "vite": "^5.4.2"
+    "vite": "^5.4.2",
+    "typescript": "^5.0.0"
+
   },
   "dependencies": {
     "@bake-js/-o-id": "*"
