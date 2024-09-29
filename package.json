@@ -17,7 +17,8 @@
     "standard": "workspace:*"
   },
   "scripts": {
-    "dev": "vite"
+    "dev": "vite",
+    "build": "vite build"
   },
   "source": "src/index.js",
   "version": "0.0.1",
