@@ -8,9 +8,24 @@ function component () {
       <source src="${music}" type="audio/mpeg">
     </audio>  -->
     <div class="player">
-      <button class="player__play">
-        ${icon.play()}
-      </button>
+      <div class="player__controls">
+        <button class="player__action">
+          ${icon.back()}
+        </button>
+        <button class="player__action">
+          ${icon.play()}
+        </button>
+        <button class="player__action">
+          ${icon.forward()}
+        </button>
+      </div>
+      <div class="player__progress">
+        <div class="player__bar"></div>
+        <div class="player__timer">
+          <span class="player__duration">00:00</span>
+          <span class="player__duration">00:00</span>
+        </div>
+      </div>
     </div>
   `
 }

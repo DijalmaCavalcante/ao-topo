@@ -2,17 +2,56 @@ import { css } from '@bake-js/-o-id/dom'
 
 function style () {
   return css`
-    .player__play {
-      border: none;
-      padding: 0;
-      background: none;
-      cursor: pointer;
-      display: inline-block;
+    .player {
+      width: 100%;
+      display: flex;
+      gap: var(--spacing_inset-xs);
+      align-items: center;
+      flex-direction: column;
     }
 
-    .player__play img {
-      display: block;
-      pointer-events: none;
+    @media(width >= 768px) {
+      .player {
+        flex-direction: row;
+      }
+    }
+
+    .player__controls {
+      display: flex;
+      gap: var(--spacing_inset-quarck);
+    }
+
+    .player__action {
+      color: var(--color-orange);
+      background: none;
+      border: none;
+      cursor: pointer;
+    }
+
+    .player__progress {
+      display: flex;
+      flex-direction: column;
+      width: 90%;
+      gap: var(--spacing_inset-quarck);
+    }
+
+    .player__bar {
+      height: 10px;
+      background-color: white;
+      border-radius: 8px;
+      width: 100%;
+      min-width: 200px;
+    }
+
+    .player__timer {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .player__duration {
+      font-size: var(--font-size-micro);
+      color: var(--color-pure-white);
     }
   `
 }

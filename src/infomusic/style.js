@@ -2,44 +2,62 @@ import { css } from '@bake-js/-o-id/dom'
 
 function style () {
   return css`
-    .infomusic {
-      display: flex;
-      padding: var(--spacing_inset-xs);
-      width: 100%;
-    }
-
     .infomusic__container {
+      background-color: rgba(255, 255, 255, 0.1);
+      border-radius: 9px;
       display: flex;
-      gap: var(--spacing_inset-xs);
       flex-direction: column;
-      justify-content: center;
       align-items: center;
-      padding: var(--spacing_inset-xs);
+      gap: var(--spacing_inset-xs);
+      width: 100%;
+      justify-content: center;
     }
 
     @media(width >= 768px) {
       .infomusic__container {
         flex-direction: row;
+        display: flex;
+        gap: var(--spacing_inset-xs);
+        align-items: center;
       }
     }
 
-    .infomusic__image {
-      width: 150px;
-      border-radius: 12px;
-    }
-
     .infomusic__details {
-      display: flex;
       flex-direction: column;
-      gap: var(--spacing_inset-xs);
+      display: flex;
+      gap: var(--spacing_inset-quarck);
       align-items: center;
+      width: 100%;
+      padding: 40px;
     }
 
     @media(width >= 768px) {
       .infomusic__details {
+        flex-direction: row;
+        gap: var(--spacing_inset-xs);
+      }
+    }
+
+    .infomusic__image {
+      width: 100%;
+      max-width: 200px;
+      border-radius: 12px;
+    }
+
+    .infomusic__teste {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 200px;
+      width: 100%;
+      gap: var(--spacing_inset-md);
+    }
+
+    @media(width >= 768px) {
+      .infomusic__teste {
         align-items: start;
         justify-content: space-between;
-        height: 100%;
       }
     }
 
@@ -56,7 +74,7 @@ function style () {
 
     @media(width >= 768px) {
       .infomusic__name {
-        align-items: start;
+        align-items: flex-start;
       }
     }
 
@@ -69,61 +87,14 @@ function style () {
       font-size: var(--font-size-nano);
       margin-bottom: 10px;
     }
-    
-    @media(width >= 768px) {
-      .infomusic {
-        display: flex;
-        gap: var(--spacing_inset-md);
-        flex-direction: row;
-      }
-
-      .infomusic__image {
-        width: 234px;
-        border-radius: 12px;
-      }
-
-      .infomusic__musicname {
-        padding-top: var(--spacing_inset-xs);
-        display: flex;
-        flex-direction: column;
-        gap: var(--spacing_inset-nano);
-
-        span {
-          font-family: var(--font-family-principal);
-          color: var(--color-pure-white);
-        }
-      }
-
-      .infomusic__title {
-        font-size: var(--font-size-xs);
-        font-weight: var(--font-weight-medium);
-      }
-
-      .infomusic__bandname {
-        font-size: var(--font-size-nano);
-      }
-    }
-
-    .infomusic__player {
-      display: flex;
-      flex-direction: column-reverse;
-      align-items: center;
-      gap: var(--spacing_inset-sm);
-    }
-
-    @media(width >= 768px) {
-      .infomusic__player {
-        height: 168px;
-        justify-content: space-between;
-        flex-direction: column;
-        align-items: start;
-        gap: 0;
-      }
-    }
 
     .infomusic__streams {
       display: flex;
       gap: var(--spacing_inset-xs);
+    }
+
+    .infomusic__player {
+      width: 100%;
     }
 `
 }

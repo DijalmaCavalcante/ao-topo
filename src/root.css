@@ -63,6 +63,7 @@
 }
 
 :root {
+  --font-size-micro: 0.8rem;
   --font-size-nano: 1.2rem;
   --font-size-xs: 1.6rem;
   --font-size-sm: 2.4rem;
