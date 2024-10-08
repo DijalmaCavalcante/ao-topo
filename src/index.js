@@ -1,8 +1,10 @@
 import "./banner"
-import "./logo"
-import "./social"
 import "./hit"
 import "./infomusic"
+import "./logo"
+import "./members"
 import "./player"
+import "./social"
+
 import "./root.css"
 import "./style.css"
