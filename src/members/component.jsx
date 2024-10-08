@@ -14,7 +14,7 @@ function component ({ selectedMember }) {
     },
     dijalma: {
       name: 'Dijalma',
-      description: 'Dijalma começou a tocar...',
+      description: 'Dijalma começou a tocar..',
       image: {dijalma},
       textImage: {dijalmat}
     },
