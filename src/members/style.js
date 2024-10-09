@@ -43,12 +43,12 @@ function style () {
     }
 
     .members_description {
-      width: 400px;
+      width: 350px;
       align-self: center;
     }
 
     .members_character {
-      width: 500px;
+      width: 600px;
     }
 `
 }
