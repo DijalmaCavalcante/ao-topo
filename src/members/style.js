@@ -50,6 +50,21 @@ function style () {
     .members_character {
       width: 600px;
     }
+
+    .members_nav {
+      display: flex;
+      z-index: 2;
+      align-self: end;
+      position: absolute;
+      padding-bottom: var(--spacing_inset-sm);
+      justify-content: space-evenly;
+      width: 90%;
+
+      span {
+        color: var(--color-pure-white);
+        font-size: var(--font-size-xs);
+      }
+    }
 `
 }
 

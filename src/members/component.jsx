@@ -15,10 +15,17 @@ function component () {
           <img class="members_description" src="${benet}" />
           <img class="members_character" src="${bene}" />
         </div>
+        <div class="members_nav">
+          <span>Bene</span>
+          <span>Dijalma</span>
+          <span>Kauan</span>
+          <span>Wallace</span>
+          <span>Lucas</span>
+        </div>
         
         <!-- <img src="${dijalma}" />
         <img src="${dijalmat}" /> -->
-      </div>t
+      </div>
     </section>
   `
 
