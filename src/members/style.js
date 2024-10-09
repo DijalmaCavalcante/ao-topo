@@ -2,55 +2,55 @@ import { css } from '@bake-js/-o-id/dom'
 
 function style () {
   return css`
-    .memberscontainer {
+    .members {
+      height: 100vh;
+      overflow: hidden;
       position: relative;
+      width: 100%;
       display: flex;
-      flex-direction: column;
       align-items: center;
       justify-content: center;
-      height: 100vh;
-      background-image: url('background-image.png');
-      background-size: cover;
-      background-attachment: fixed;
     }
 
-    .memberhighlight {
-      position: relative;
+    .members_background {
+      filter: brightness(0.3);
+      height: 100%;
+      object-fit: cover;
+      position: absolute;
+      width: 100%;
+    }
+
+    .members_container {
+      align-items: center;
       display: flex;
-      justify-content: space-between;
-      margin-bottom: 20px;
-    }
-
-    .highlightimage {
-      width: 300px;
-      height: auto;
-      border: 3px solid orange;
-    }
-
-    .textimage {
-      width: 200px;
-      height: auto;
-      margin-left: 20px;
-    }
-
-    .memberslist {
-      display: flex;
+      height: 100%;
       justify-content: center;
-      gap: 15px;
+      max-width: 1280px;
+      width: 100%;
+      position: absolute;
+      text-align: center;
+      top: 0;
+      z-index: 1;
     }
 
-    .memberslist button {
-      background-color: transparent;
-      border: none;
-      color: white;
-      font-size: 20px;
-      cursor: pointer;
+    .members_group {
+      display: flex;
+      gap: var(--spacing_inset-xs);
+      width: 100%;
+      justify-content: space-around;
+      align-items: end;
+      height: 100%;
     }
 
-    .memberslist button:hover {
-      color: orange;
+    .members_description {
+      width: 400px;
+      align-self: center;
+    }
+
+    .members_character {
+      width: 500px;
     }
 `
 }
-export default style
 
+export default style

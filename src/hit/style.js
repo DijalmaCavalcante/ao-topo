@@ -11,7 +11,7 @@ function style () {
       display: flex;
       justify-content: center;
       overflow: hidden;
-      padding: var(--spacing_inset-sm);
+      padding: var(--spacing_inset-huge) var(--spacing_inset-sm);
     }
 
     .hit__infomusic {
