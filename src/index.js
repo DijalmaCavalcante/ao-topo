@@ -5,6 +5,7 @@ import "./logo"
 import "./members"
 import "./player"
 import "./social"
+import "./container"
 
 import "./root.css"
 import "./style.css"
