@@ -4,27 +4,32 @@ import bene from './bene.png'
 import benet from './benet.png'
 import dijalma from './dijalma.png'
 import dijalmat from './dijalmat.png'
+import relato from './relato.png'
 
 function component () {
-
   return html`
     <section class="members">
       <img class="members_background" src="${background}" />
       <div class="members_container">
-        <div class="members_group">
+        <div class="members_group" id="bene">
           <img class="members_description" src="${benet}" />
           <img class="members_character" src="${bene}" />
         </div>
-        <div class="members_nav">
-          <span>Bene</span>
-          <span>Dijalma</span>
-          <span>Kauan</span>
-          <span>Wallace</span>
-          <span>Lucas</span>
+
+        <div class="members_group" id="dijalma">
+          <img class="members_description" src="${dijalmat}" />
+          <img class="members_character" src="${dijalma}" />
         </div>
-        
-        <!-- <img src="${dijalma}" />
-        <img src="${dijalmat}" /> -->
+
+        <div class="members_nav">
+          <button class="relato" id="beneButton">
+            <img src="${relato}" />
+          </button>
+          <button class="relato" id="dijalmaButton">
+            <img src="${relato}" />
+          </button>
+        </div>
+
       </div>
     </section>
   `
