@@ -37,7 +37,7 @@ function style () {
       display: none;
     }
 
-    .members_group.active {
+    .members_group[current = 'true'] {
       display: flex;
       gap: var(--spacing_inset-xs);
       width: 100%;
