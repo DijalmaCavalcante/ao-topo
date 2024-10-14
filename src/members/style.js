@@ -35,15 +35,15 @@ function style () {
 
     .members_group {
       display: none;
-    }
-
-    .members_group[current = 'true'] {
-      display: flex;
       gap: var(--spacing_inset-xs);
       width: 100%;
       justify-content: space-around;
       align-items: end;
       height: 100%;
+    }
+
+    .members_group[current = "true"] {
+      display: flex;
     }
 
     .members_description {
@@ -52,7 +52,8 @@ function style () {
     }
 
     .members_character {
-      width: 600px;
+      width: 60%;
+      height: 80%;
     }
 
     .members_nav {

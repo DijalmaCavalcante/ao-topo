@@ -1,21 +1,36 @@
 import { define } from "@bake-js/-o-id";
-import { paint } from "@bake-js/-o-id/dom";
-import component from "./component"
-import style from "./style"
+import { paint, repaint } from "@bake-js/-o-id/dom";
+import component from "./component";
+import style from "./style";
 import on from "@bake-js/-o-id/event"
 
 @define('at-members')
 @paint(component, style)
 class Members extends HTMLElement {
+  #current
+
+  get current () {
+    return (this.#current??= 'bene')
+  }
+
   constructor () {
     super()
     this.attachShadow({ mode: "open" })
-    this.state = { current: 'bene' } // inicializa o estado com 'bene'
   }
 
-  setState (state) {
-    this.state = {...this.state,...state }
+  @repaint
+  change (member) {    
+    this.#current = member
+    return this
+  }
+
+  @on.click('#beneButton')
+  beneButtonClick() {
+    this.change('bene')
+  }
+
+  @on.click('#dijalmaButton')
+  dijalmaButtonClick() {
+    this.change('dijalma')
   }
 }
-
-export default Members
