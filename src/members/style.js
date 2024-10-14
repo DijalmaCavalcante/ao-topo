@@ -51,7 +51,12 @@ function style () {
       align-self: center;
     }
 
-    .members_character {
+    .members_bene {
+      width: 45%;
+      height: 80%;
+    }
+
+    .members_dijalma {
       width: 60%;
       height: 80%;
     }

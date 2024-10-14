@@ -16,12 +16,12 @@ function component (self) {
 
         <div class="members_group" id="bene" current=${self.current === 'bene'}>
           <img class="members_description" src="${benet}" />
-          <img class="members_character" src="${bene}" />
+          <img class="members_bene" src="${bene}" />
         </div>
 
         <div class="members_group" id="dijalma" current=${self.current === 'dijalma'}>
           <img class="members_description" src="${dijalmat}" />
-          <img class="members_character" src="${dijalma}" />
+          <img class="members_dijalma" src="${dijalma}" />
         </div>
 
         <div class="members_nav">
