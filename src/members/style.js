@@ -90,16 +90,31 @@ function style () {
     }
 
     .members__button {
-      color: var(--color-pure-white);
-      font-size: var(--font-size-xs);
-      background-color: var(--color-pure-black);
-      padding: var(--spacing_inset-nano);
-      border-radius: 9px;
-      border: 1px solid var(--color-orange);
-      display: flex;
       align-items: center;
-      justify-content: center;
+      background-color: var(--color-pure-black);
+      border-radius: 9px;
+      border: 2px solid var(--color-orange);
+      color: var(--color-pure-white);
       cursor: pointer;
+      display: flex;
+      font-size: var(--font-size-xs);
+      justify-content: center;
+      padding: var(--spacing_inset-nano);
+      position: relative;
+      width: 100%;
+
+      &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        display: block;
+        height: 100%;
+        width: 100%;
+      }
+    }
+
+    .members__button[current = "true"] {
+      border: 2px solid var(--color-blue-darker);
     }
 
     .members__person {
