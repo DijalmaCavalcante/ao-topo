@@ -33,6 +33,7 @@ function style () {
       flex-direction: column;
       width: 90%;
       gap: var(--spacing_inset-quarck);
+      padding-top: 15px;
     }
 
     .player__bar {

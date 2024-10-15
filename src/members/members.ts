@@ -10,7 +10,7 @@ class Members extends HTMLElement {
   #current
 
   get current () {
-    return (this.#current??= 'bene')
+    return (this.#current??= 'kauan')
   }
 
   constructor () {
@@ -19,7 +19,7 @@ class Members extends HTMLElement {
   }
 
   @repaint
-  change (member) {    
+  change (member) {       
     this.#current = member
     return this
   }
@@ -32,5 +32,20 @@ class Members extends HTMLElement {
   @on.click('#dijalmaButton')
   dijalmaButtonClick() {
     this.change('dijalma')
+  }
+
+  @on.click('#wallaceButton')
+  wallaceButtonClick() {
+    this.change('wallace')
+  }
+
+  @on.click('#kauanButton')
+  kauanButtonClick() {
+    this.change('kauan')
+  }
+
+  @on.click('#lucasButton')
+  lucasButtonClick() {
+    this.change('lucas')
   }
 }

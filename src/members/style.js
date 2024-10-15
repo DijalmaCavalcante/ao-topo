@@ -69,13 +69,14 @@ function style () {
       padding-bottom: var(--spacing_inset-sm);
       justify-content: space-evenly;
       width: 90%;
+      gap: var(--spacing_inset-md);
     }
 
-    .relato {
+    .members__button {
       color: var(--color-pure-white);
       font-size: var(--font-size-xs);
       background-color: var(--color-pure-black);
-      padding: var(--spacing_inset-nano) var(--spacing_inset-sm);
+      padding: var(--spacing_inset-nano);
       border-radius: 9px;
       border: 1px solid var(--color-orange);
       display: flex;
@@ -83,6 +84,11 @@ function style () {
       justify-content: center;
       cursor: pointer;
     }
+
+    .members__person {
+      width: 50%;
+    }
+
 `
 }
 

@@ -1,19 +1,52 @@
-import imgBene from './bene.png'
-import descriptionBene from './benet.png'
-import imgDijalma from './dijalma.png'
-import descriptionDijalma from './dijalmat.png'
+import benePerson from "./assets/bene.png"
+import beneRelato from "./assets/beneRelato.png"
+import beneName from "./assets/beneName.png"
+import dijalmaPerson from "./assets/dijalma.png"
+import dijalmaRelato from "./assets/dijalmaRelato.png"
+import dijalmaName from "./assets/dijalmaName.png"
+import kauanPerson from "./assets/kauan.png"
+import kauanName from "./assets/kauanName.png"
+import kauanRelato from "./assets/kauanRelato.png"
+import wallacePerson from "./assets/wallace.png"
+import wallaceRelato from "./assets/wallaceRelato.png"
+import wallaceName from "./assets/wallaceName.png"
+import lucasPerson from "./assets/lucas.png"
+import lucasRelato from "./assets/lucasRelato.png"
+import lucasName from "./assets/lucasName.png"
 
-const characters = [
-  {
-    name: "Bene",
-    description: descriptionBene,
-    image: imgBene
+
+const characters = {
+  bene: {
+    name: "bene",
+    description: beneRelato,
+    person: benePerson,
+    risk: beneName
   },
-  {
-    name: "Dijalma",
-    description: descriptionDijalma,
-    image: imgDijalma
+  dijalma: {
+    name: "dijalma",
+    description: dijalmaRelato,
+    person: dijalmaPerson,
+    risk: dijalmaName
+  },
+  wallace: {
+    name: "wallace",
+    description: wallaceRelato,
+    person: wallacePerson,
+    risk: wallaceName
+  },
+  kauan: {
+    name: "kauan",
+    description: kauanRelato,
+    person: kauanPerson,
+    risk: kauanName
+  },
+  lucas: {
+    name: "lucas",
+    description: lucasRelato,
+    person: lucasPerson,
+    risk: lucasName
   }
-]
+};
 
-export default characters
+export default characters;
+
