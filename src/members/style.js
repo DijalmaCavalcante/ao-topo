@@ -77,7 +77,6 @@ function style () {
       max-height: 90%;
     }
 
-
     .members_nav {
       display: flex;
       z-index: 2;
@@ -90,10 +89,9 @@ function style () {
     }
 
     .members__button {
-      align-items: center;
-      background-color: var(--color-pure-black);
+      background-color: var(--color-master);
       border-radius: 9px;
-      border: 2px solid var(--color-orange);
+      border: 2px solid var(--color-master-light);
       color: var(--color-pure-white);
       cursor: pointer;
       display: flex;
@@ -102,6 +100,8 @@ function style () {
       padding: var(--spacing_inset-nano);
       position: relative;
       width: 100%;
+      align-items: center;
+      opacity: 0.8;
 
       &::before {
         content: "";
@@ -114,7 +114,9 @@ function style () {
     }
 
     .members__button[current = "true"] {
-      border: 2px solid var(--color-blue-darker);
+      border: 2px solid var(--color-orange);
+      background-color: var(--color-pure-black);
+      opacity: 1;
     }
 
     .members__person {

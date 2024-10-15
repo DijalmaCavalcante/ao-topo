@@ -4,9 +4,9 @@ import icon from './icon'
 
 function component () {
   return html`
-    <!-- <audio controls>
+    <audio id="player__music">
       <source src="${music}" type="audio/mpeg">
-    </audio>  -->
+    </audio> 
     <div class="player">
       <div class="player__controls">
         <button class="player__action">
