@@ -47,19 +47,36 @@ function style () {
     }
 
     .members_description {
-      width: 350px;
+      max-width: 25%;
       align-self: center;
     }
 
+    .members_kauan {
+      max-width: 70%;
+      transform: scaleX(-1);
+      max-height: 90%;
+    }
+
     .members_bene {
-      width: 45%;
-      height: 80%;
+      max-width: 90%;
+      max-height: 90%;
     }
 
     .members_dijalma {
-      width: 60%;
-      height: 80%;
+      max-width: 70%;
+      max-height: 90%;
     }
+
+    .members_wallace {
+      max-width: 90%;
+      max-height: 90%;
+    }
+
+    .members_lucas {
+      max-width: 47%;
+      max-height: 90%;
+    }
+
 
     .members_nav {
       display: flex;
