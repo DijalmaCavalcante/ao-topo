@@ -3,9 +3,9 @@ import component from './component'
 import { attributeChanged, define } from '@bake-js/-o-id';
 import style from './style'
 
-@define('at-social')
+@define('at-icons')
 @paint(component, style)
-class Social extends HTMLElement {
+class Icons extends HTMLElement {
   #type
 
   get type () {
@@ -24,4 +24,4 @@ class Social extends HTMLElement {
   }
 }
 
-export default Social
+export default Icons

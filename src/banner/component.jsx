@@ -8,8 +8,8 @@ function component () {
       <div class="banner_container">
         <at-logo></at-logo>
         <div class="banner_social">
-          <at-social class="banner_icon" type="instagram"></at-social>
-          <at-social class="banner_icon" type="spotify"></at-social>
+          <at-icons class="banner_icon" type="instagram"></at-icons>
+          <at-icons class="banner_icon" type="spotify"></at-icons>
         </div>
       </div>
     </section>

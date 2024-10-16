@@ -4,7 +4,7 @@ import "./infomusic"
 import "./logo"
 import "./members"
 import "./player"
-import "./social"
+import "./icons"
 import "./container"
 
 import "./root.css"

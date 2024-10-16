@@ -26,6 +26,31 @@ function style () {
       background: none;
       border: none;
       cursor: pointer;
+      fill: var(--color-orange);
+    }
+
+    .player__playpause {
+      color: var(--color-orange);
+      background: none;
+      border: none;
+      cursor: pointer;
+      fill: var(--color-orange);
+      display: none;
+      position: relative;
+
+      &::before {
+        content: "";
+        position: absolute;
+        display: block;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+      }
+    }
+
+    .player__playpause[current = "true"] {
+      display: flex;
     }
 
     .player__progress {

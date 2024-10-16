@@ -6,6 +6,7 @@ import instagramImage from './assets/instagramBranco.png'
 import spotifyOriginal from './assets/spotify.png'
 import spotifyImage from './assets/spotifyBranco.png'
 import youtubeIcon from './assets/youtube.png'
+import svg from './svg'
 
 function component (self) {
   const instagram = html`
@@ -50,6 +51,12 @@ function component (self) {
     </a>
   `
 
+  const mouse = html `${svg.mouse()}`
+  const pause = html `${svg.pause()}`
+  const play = html `${svg.play()}`
+  const forward = html `${svg.forward()}`
+  const back = html `${svg.back()}`
+
   switch (self.type) {
     case "instagram": 
       return instagram
@@ -71,6 +78,21 @@ function component (self) {
 
     case "youtube":
       return youtube
+
+    case "mouse":
+      return mouse
+    
+    case "pause":
+      return pause
+
+    case "play":
+      return play
+
+    case "forward":
+      return forward
+
+    case "back":
+      return back
 
     default:
       return ""

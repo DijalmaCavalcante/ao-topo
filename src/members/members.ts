@@ -49,3 +49,5 @@ class Members extends HTMLElement {
     this.change('lucas')
   }
 }
+
+export default Members
