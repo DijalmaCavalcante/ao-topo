@@ -1,15 +1,21 @@
 import { html } from '@bake-js/-o-id/dom';
 import background from '../assets/background.png'
+import link from '../links'
 
 function component () {
   return html`
     <section class="banner">
       <img class="banner_background" src="${background}" />
+      <at-icons use="mouse" class="banner__mouse"></at-icons>
       <div class="banner_container">
         <at-logo></at-logo>
         <div class="banner_social">
-          <at-icons class="banner_icon" type="instagram"></at-icons>
-          <at-icons class="banner_icon" type="spotify"></at-icons>
+          <a href=${link.instagram}>
+            <at-icons class="teste" use="strokeinstagram"></at-icons>
+          </a>
+          <a>
+            <at-icons class="teste" use="strokespotify"></at-icons>
+          </a>
         </div>
       </div>
     </section>
