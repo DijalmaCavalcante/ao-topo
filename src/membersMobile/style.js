@@ -27,7 +27,7 @@ function style () {
       align-items: center;
       justify-content: space-between;
       flex-direction: column;
-      width: 100%;
+      max-width: 1190px;
       height: 100%;
       padding: var(--spacing_inset-xs);
     }

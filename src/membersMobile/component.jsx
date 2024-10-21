@@ -8,13 +8,13 @@ function component (self) {
       <img class="membersMobile__background" src="${background}" />
       <div class="membersMobile__container">
         
-      <div class="membersMobile__buttonContainer">
-        <button class="membersMobile__button" id="kauanButton" current=${self.current === 'kauan'}>
-          <img src="${characters.bene.risk}" class="membersMobile__risk"/>
-        </button>
-      </div>
+        <div class="membersMobile__buttonContainer">
+          <button class="membersMobile__button" id="kauanButton" current=${self.current === 'kauan'}>
+            <img src="${characters.kauan.risk}" class="membersMobile__risk"/>
+          </button>
+        </div>
 
-        <img class="membersMobile__kauan" src="${characters.bene.person}" />
+        <img class="membersMobile__kauan" src="${characters.kauan.person}" />
 
       </div>
     </section>
