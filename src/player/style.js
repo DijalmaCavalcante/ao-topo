@@ -26,7 +26,8 @@ function style () {
       background: none;
       border: none;
       cursor: pointer;
-      fill: var(--color-orange);
+      width: 32px;
+      height: 32px;
     }
 
     .player__playpause {

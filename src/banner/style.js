@@ -21,14 +21,22 @@ function style () {
     }
 
     .banner__mouse {
-      color: var(--color-pure-white);
       width: 44px;
       height: 44px;
-      z-index: 1;
-      position: absolute;
+    }
+
+    .banner__scroll {
+      align-items: center;
       align-self: start;
-      padding-top: var(--spacing_inset-sm);
       animation: moveUpDown 2s ease-in-out infinite;
+      color: var(--color-pure-white);
+      display: flex;
+      flex-direction: column;
+      height: 44px;
+      padding-top: var(--spacing_inset-sm);
+      position: absolute;
+      width: 100%;
+      z-index: 1;
     }
 
     @keyframes moveUpDown {

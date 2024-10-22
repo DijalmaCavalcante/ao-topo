@@ -2,7 +2,7 @@ import { css } from '@bake-js/-o-id/dom'
 
 function style () {
   return css`
-    .membersMobile {
+    .membersmobile {
       height: 100vh;
       overflow: hidden;
       position: relative;
@@ -12,7 +12,7 @@ function style () {
       justify-content: center;
     }
 
-    .membersMobile__background {
+    .membersmobile__background {
       filter: brightness(0.3);
       height: 100%;
       object-fit: cover;
@@ -20,7 +20,7 @@ function style () {
       width: 100%;
     }
 
-    .membersMobile__container {
+    .membersmobile__container {
       z-index: 2;
       position: relative;
       display: flex;
@@ -32,29 +32,37 @@ function style () {
       padding: var(--spacing_inset-xs);
     }
 
-    .membersMobile__kauan {
-      height: 70%;
-      width: 100%;
-    }
-
-    .membersMobile__buttonContainer {
+    .membersmobile__buttonContainer {
       padding: var(--spacing_inset-giant);
       display: flex;
       justify-content: center;
+      align-items: center;
+      gap: var(--spacing_inset-md);
     }
 
-    .membersMobile__button {
+    .membersmobile__action {
+      color: var(--color-pure-white);
+      width: 42px;
+      height: 42px;
+    }
+
+    .membersmobile__button {
       border: 2px solid var(--color-orange);
       background-color: var(--color-pure-black);
       width: 80%;
       padding: var(--spacing_inset-nano) var(--spacing_inset-xs);
       border-radius: 9px;
+      display: flex;
     }
 
-    .membersMobile__risk {
+    .membersmobile__risk {
       width: 100%;
     }
 
+    .membersmobile__kauan {
+      height: 70%;
+      width: 100%;
+    }
 `
 }
 

@@ -6,7 +6,10 @@ function component () {
   return html`
     <section class="banner">
       <img class="banner_background" src="${background}" />
-      <at-icons use="mouse" class="banner__mouse"></at-icons>
+      <div class="banner__scroll">
+        <at-icons use="mouse" class="banner__mouse"></at-icons>
+        <span>Pra cima!</span>
+      </div>
       <div class="banner_container">
         <at-logo></at-logo>
         <div class="banner_social">

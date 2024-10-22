@@ -4,17 +4,19 @@ import characters from './characters'
 
 function component (self) {  
   return html`
-    <section class="membersMobile">
-      <img class="membersMobile__background" src="${background}" />
-      <div class="membersMobile__container">
+    <section class="membersmobile">
+      <img class="membersmobile__background" src="${background}" />
+      <div class="membersmobile__container">
         
-        <div class="membersMobile__buttonContainer">
-          <button class="membersMobile__button" id="kauanButton" current=${self.current === 'kauan'}>
-            <img src="${characters.kauan.risk}" class="membersMobile__risk"/>
+        <div class="membersmobile__buttonContainer">
+          <at-icons class="membersmobile__action" use="arrowleft"></at-icons>
+          <button class="membersmobile__button" id="kauanButton" current=${self.current === 'kauan'}>
+            <img src="${characters.kauan.risk}" class="membersmobile__risk"/>
           </button>
+          <at-icons class="membersmobile__action" use="arrowright"></at-icons>
         </div>
 
-        <img class="membersMobile__kauan" src="${characters.kauan.person}" />
+        <img class="membersmobile__kauan" src="${characters.lucas.person}" />
 
       </div>
     </section>
