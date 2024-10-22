@@ -6,7 +6,7 @@ import "./infomusic"
 import "./logo"
 import "./members"
 import "./membersDesktop"
-import "./membersMobile"
+import "./membersmobile"
 import "./player"
 
 import "./root.css"

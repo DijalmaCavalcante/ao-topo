@@ -15,38 +15,38 @@ import lucasRelato from "./assets/lucasRelato.png"
 import lucasName from "./assets/lucasName.png"
 
 
-const characters = {
-  bene: {
+const characters = [
+  {
     name: "bene",
     description: beneRelato,
     person: benePerson,
     risk: beneName
   },
-  dijalma: {
+  {
     name: "dijalma",
     description: dijalmaRelato,
     person: dijalmaPerson,
     risk: dijalmaName
   },
-  wallace: {
+  {
     name: "wallace",
     description: wallaceRelato,
     person: wallacePerson,
     risk: wallaceName
   },
-  kauan: {
+  {
     name: "kauan",
     description: kauanRelato,
     person: kauanPerson,
     risk: kauanName
   },
-  lucas: {
+  {
     name: "lucas",
     description: lucasRelato,
     person: lucasPerson,
     risk: lucasName
   }
-};
+];
 
 export default characters;
 
