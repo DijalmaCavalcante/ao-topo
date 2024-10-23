@@ -48,7 +48,6 @@ function style () {
       width: 42px;
       height: 42px;
       position: relative;
-      background-color: var(--color-orange);
       border-radius: 50%;
 
 
@@ -79,6 +78,7 @@ function style () {
       border: 2px solid var(--color-orange);
       display: flex;
       padding: var(--spacing_inset-nano) var(--spacing_inset-xs);
+      width: 50%;
     }
 
     .membersmobile__character {
