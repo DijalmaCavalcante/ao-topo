@@ -2,17 +2,18 @@ import { css } from '@bake-js/-o-id/dom'
 
 function style () {
   return css`
-    .membersDesktop {
+    .membersdesktop {
+      align-items: center;
+      display: flex;
       height: 100vh;
+      justify-content: center;
       overflow: hidden;
       position: relative;
       width: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
     }
 
-    .membersDesktop_background {
+    .membersdesktop_background {
+      background-repeat: no-repeat;
       filter: brightness(0.3);
       height: 100%;
       object-fit: cover;
@@ -20,64 +21,44 @@ function style () {
       width: 100%;
     }
 
-    .membersDesktop_container {
+    .membersdesktop_container {
       align-items: center;
       display: flex;
       height: 100%;
       justify-content: center;
       max-width: 1280px;
-      width: 100%;
       position: absolute;
       text-align: center;
       top: 0;
+      width: 100%;
       z-index: 1;
     }
 
-    .membersDesktop_group {
+    .membersdesktop_group {
+      align-items: end;
       display: none;
       gap: var(--spacing_inset-xs);
-      width: 100%;
-      justify-content: space-around;
-      align-items: end;
       height: 100%;
+      justify-content: space-around;
+      width: 100%;
     }
 
-    .membersDesktop_group[current = "true"] {
+    .membersdesktop_group[current = "true"] {
       display: flex;
     }
 
-    .membersDesktop_description {
-      max-width: 25%;
+    .membersdesktop_description {
+      max-width: 30%;
       align-self: center;
     }
 
-    .membersDesktop_kauan {
-      max-width: 70%;
-      transform: scaleX(-1);
-      max-height: 90%;
+    .membersmobile__character {
+      width: 100%;
+      height: auto;
+      max-width: 100%;
     }
 
-    .membersDesktop_bene {
-      max-width: 90%;
-      max-height: 90%;
-    }
-
-    .membersDesktop_dijalma {
-      max-width: 70%;
-      max-height: 90%;
-    }
-
-    .membersDesktop_wallace {
-      max-width: 90%;
-      max-height: 90%;
-    }
-
-    .membersDesktop_lucas {
-      max-width: 47%;
-      max-height: 90%;
-    }
-
-    .membersDesktop_nav {
+    .membersdesktop_nav {
       display: flex;
       z-index: 2;
       align-self: end;
@@ -88,7 +69,7 @@ function style () {
       gap: var(--spacing_inset-md);
     }
 
-    .membersDesktop__button {
+    .membersdesktop__button {
       background-color: var(--color-master);
       border-radius: 9px;
       border: 2px solid var(--color-master-light);
@@ -113,13 +94,13 @@ function style () {
       }
     }
 
-    .membersDesktop__button[current = "true"] {
+    .membersdesktop__button[current = "true"] {
       border: 2px solid var(--color-orange);
       background-color: var(--color-pure-black);
       opacity: 1;
     }
 
-    .membersDesktop__person {
+    .membersdesktop__person {
       width: 50%;
     }
 

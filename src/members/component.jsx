@@ -1,11 +1,9 @@
 import { html } from '@bake-js/-o-id/dom';
 
-function component () {  
+function component (self) {  
   return html`
-    <div>
-      <at-members-desktop></at-members-desktop>
-      <at-members-mobile></at-members-mobile>
-    </div>
+    <at-members-desktop class="desktop" desktop=${self.desktop}></at-members-desktop>
+    <at-members-mobile class="mobile" mobile=${self.mobile}></at-members-mobile>
   `
 }
 

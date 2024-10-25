@@ -5,7 +5,7 @@ import "./icons"
 import "./infomusic"
 import "./logo"
 import "./members"
-import "./membersDesktop"
+import "./membersdesktop"
 import "./membersmobile"
 import "./player"
 

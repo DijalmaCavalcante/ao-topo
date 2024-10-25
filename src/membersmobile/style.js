@@ -3,13 +3,13 @@ import { css } from '@bake-js/-o-id/dom'
 function style () {
   return css`
     .membersmobile {
+      align-items: center;
+      display: flex;
       height: 100vh;
+      justify-content: center;
       overflow: hidden;
       position: relative;
       width: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
     }
 
     .membersmobile__background {
@@ -21,26 +21,26 @@ function style () {
     }
 
     .membersmobile__container {
-      z-index: 1;
-      position: relative;
-      display: flex;
       align-items: center;
+      display: flex;
       flex-direction: column;
-      max-width: 90%;
       height: 100%;
+      max-width: 90%;
       padding: var(--spacing_inset-xs);
+      position: relative;
+      z-index: 1;
     }
 
     .membersmobile__actions {
-      width: 100%;
-      height: 100%;
-      display: flex;
       align-items: center;
+      display: flex;
+      height: 100%;
       justify-content: space-between;
-      z-index: 2;
+      left: 0;
       position: absolute;
       top: 0;
-      left: 0;
+      width: 100%;
+      z-index: 2;
     }
 
     .membersmobile__action {
@@ -68,8 +68,9 @@ function style () {
       gap: var(--spacing_inset-md);
       height: 100%;
       justify-content: center;
-      padding-top: var(--spacing_inset-md);
       width: 100%;
+      position: relative;
+      padding-top: 10px;
     }
 
     .membersmobile__risk {
@@ -79,11 +80,16 @@ function style () {
       display: flex;
       padding: var(--spacing_inset-nano) var(--spacing_inset-xs);
       width: 50%;
+      z-index: 2;
+      position: absolute;
+      bottom: 0;
+      margin-bottom: var(--spacing_inset-md);
     }
 
     .membersmobile__character {
-      height: 100%;
       width: 100%;
+      height: 100%;
+      max-width: 100%;
     }
 `
 }

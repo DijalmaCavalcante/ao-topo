@@ -6,7 +6,7 @@ import on from "@bake-js/-o-id/event"
 
 @define('at-members-desktop')
 @paint(component, style)
-class MembersDesktop extends HTMLElement {
+class Membersdesktop extends HTMLElement {
   #current
 
   get current () {
@@ -50,4 +50,4 @@ class MembersDesktop extends HTMLElement {
   }
 }
 
-export default MembersDesktop
+export default Membersdesktop
