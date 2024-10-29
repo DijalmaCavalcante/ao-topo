@@ -67,10 +67,9 @@ function style () {
       flex-direction: column;
       gap: var(--spacing_inset-md);
       height: 100%;
-      justify-content: center;
+      justify-content: end;
       width: 100%;
-      position: relative;
-      padding-top: 10px;
+      padding: 10px;
     }
 
     .membersmobile__risk {
@@ -80,15 +79,10 @@ function style () {
       display: flex;
       padding: var(--spacing_inset-nano) var(--spacing_inset-xs);
       width: 50%;
-      z-index: 2;
-      position: absolute;
-      bottom: 0;
-      margin-bottom: var(--spacing_inset-md);
     }
 
     .membersmobile__character {
       width: 100%;
-      height: 100%;
       max-width: 100%;
     }
 `

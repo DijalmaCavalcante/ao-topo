@@ -1,3 +1,6 @@
+import "./root.css"
+import "./style.css"
+
 import "./banner"
 import "./container"
 import "./hit"
@@ -7,7 +10,5 @@ import "./logo"
 import "./members"
 import "./membersdesktop"
 import "./membersmobile"
+import "./pictures"
 import "./player"
-
-import "./root.css"
-import "./style.css"
