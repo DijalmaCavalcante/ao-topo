@@ -7,7 +7,6 @@ function component (self) {
     <section class="membersdesktop">
       <img class="membersdesktop_background" src="${background}" />
       <div class="membersdesktop_container">
-        <span>Membros</span>
 
         <div class="membersdesktop_group" id="kauan" current=${self.current === 'kauan'}>
           <img class="membersdesktop_description" src="${characters.kauan.description}" />
