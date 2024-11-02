@@ -82,8 +82,22 @@ function style () {
     }
 
     .membersmobile__character {
-      width: 100%;
-      max-width: 100%;
+      width: 330px;
+      height: 530px;
+    }
+
+    @media( width >= 420px) {
+      .membersmobile__character {
+        width: 330px;
+        height: 530px;
+      }
+    }
+
+    @media( width >= 470px) {
+      .membersmobile__character {
+        width: 400px;
+        height: 600px;
+      }
     }
 `
 }

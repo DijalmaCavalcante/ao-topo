@@ -48,13 +48,13 @@ function style () {
     }
 
     .membersdesktop_description {
-      max-width: 30%;
+      max-width: 25%;
       align-self: center;
     }
 
     .membersmobile__character {
-      width: 600px;
-      height: 800px;
+      width: auto;
+      max-height: 90%;
     }
 
     .membersdesktop_nav {
