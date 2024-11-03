@@ -28,30 +28,31 @@ function style () {
       cursor: pointer;
       width: 32px;
       height: 32px;
-    }
-
-    .player__playpause {
-      color: var(--color-orange);
-      background: none;
-      border: none;
-      cursor: pointer;
-      fill: var(--color-orange);
-      display: none;
       position: relative;
 
-      &::before {
+      &::after {
         content: "";
-        position: absolute;
         display: block;
-        height: 100%;
-        width: 100%;
-        top: 0;
+        position: absolute;
         left: 0;
+        height: 32px;
+        top: 0;
+        width: 32px;
+
       }
     }
 
-    .player__playpause[current = "true"] {
-      display: flex;
+    #playButton,
+    #pauseButton {
+      display: none;
+    }
+
+    #playButton[playing="false"] {
+      display: block;
+    }
+
+    #pauseButton[playing="true"] {
+      display: block;
     }
 
     .player__progress {

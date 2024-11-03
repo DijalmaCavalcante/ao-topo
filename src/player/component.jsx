@@ -9,16 +9,16 @@ function component (self) {
     <div class="player">
       <div class="player__controls">
 
-        <button class="player__action">
+        <button class="player__action" id="backButton">
           <at-icons use="back"></at-icons>
         </button>
-        <button class="player__action" id="playButton" current=${self.current === "play"}>
+        <button class="player__action" id="playButton" playing=${self.playing}>
           <at-icons use="play"></at-icons>
         </button>
-        <button class="player__action" id="pauseButton" current=${self.current === "pause"}>
+        <button class="player__action" id="pauseButton" playing=${self.playing}>
           <at-icons use="pause"></at-icons>
         </button>
-        <button class="player__action">
+        <button class="player__action" id="forwardButton">
           <at-icons use="forward"></at-icons>
         </button>
       </div>

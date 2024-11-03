@@ -7,10 +7,10 @@ import on from "@bake-js/-o-id/event"
 @define('at-player')
 @paint(component, style)
 class Player extends HTMLElement {
-  #current
+  #playing;
 
-  get current () {
-    return (this.#current ??= "play")
+  get playing () {
+    return (this.#playing ??= false);
   }
 
   constructor () {
@@ -18,23 +18,33 @@ class Player extends HTMLElement {
     this.attachShadow({ mode: "open" });
   }
 
+  @on.click("#playButton")
   @repaint
-  change (state) {     
-    this.#current = state
-
-    return this
+  play () {
+    console.log("play");
+    this.#playing = true
+    
   }
 
-  @on.click('#playButton')
-  play() {
-    this.change('play')
+  @on.click("#pauseButton")
+  @repaint
+  pause () {
+    console.log("pause");
+    this.#playing = false
+    
   }
 
-  @on.click('#pauseButton')
-  pause() {
-    this.change('pause')
+  @on.click("#backButton")
+  back () {
+    console.log("back");
+    
   }
 
+  @on.click("#forwardButton")
+  forward () {
+    console.log("forward");
+    
+  }
 }
 
 export default Player;

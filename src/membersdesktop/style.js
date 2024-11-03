@@ -21,6 +21,33 @@ function style () {
       width: 100%;
     }
 
+    .membersdesktop__title {
+      position: relative;
+      height: 100%;
+      padding-top: var(--spacing_inset-sm);
+      width: 100%;
+      display: flex;
+      align-items: start;
+      justify-content: center;
+      margin-top: var(--spacing-xxxl);
+    }
+
+    .membersdesktop__line {
+      width: 200px;
+      height: 15px;
+      background-color: var(--color-orange);
+      position: absolute;
+      margin-top: 10px;
+    }
+
+    .membersdesktop__members {
+      position: absolute;
+      color: white;
+      font-size: var(--font-size-md);
+      z-index: 1;
+      top: 0; 
+    }
+
     .membersdesktop_container {
       align-items: center;
       display: flex;
@@ -32,6 +59,13 @@ function style () {
       top: 0;
       width: 100%;
       z-index: 1;
+      padding: var(--spacing_inset-xs);
+    }
+
+    .members_desktop {
+      color: white;
+      font-size: var(--font-size-md);
+      margin-top: 10px;
     }
 
     .membersdesktop_group {
@@ -54,7 +88,7 @@ function style () {
 
     .membersmobile__character {
       width: auto;
-      max-height: 90%;
+      height: 800px;
     }
 
     .membersdesktop_nav {

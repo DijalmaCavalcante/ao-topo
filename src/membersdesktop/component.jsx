@@ -6,8 +6,11 @@ function component (self) {
   return html`
     <section class="membersdesktop">
       <img class="membersdesktop_background" src="${background}" />
+      <div class="membersdesktop__title">
+        <span class="membersdesktop__members">Membros</span>
+        <div class="membersdesktop__line"></div>
+      </div>
       <div class="membersdesktop_container">
-
         <div class="membersdesktop_group" id="kauan" current=${self.current === 'kauan'}>
           <img class="membersdesktop_description" src="${characters.kauan.description}" />
           <img class="membersmobile__character" src="${characters.kauan.person}" />
