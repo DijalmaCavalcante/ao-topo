@@ -5,19 +5,19 @@ import link from '../links'
 function component () {
   return html`
     <section class="banner">
-      <img class="banner_background" src="${background}" />
+      <img class="banner__background" src="${background}" />
       <div class="banner__scroll">
         <at-icons use="mouse" class="banner__mouse"></at-icons>
         <span>Pra cima!</span>
       </div>
-      <div class="banner_container">
+      <div class="banner__container">
         <at-logo></at-logo>
-        <div class="banner_social">
+        <div class="banner__social">
           <a href=${link.instagram} target="_blank">
-            <at-icons class="banner__icons" use="strokeinstagram"></at-icons>
+            <at-icons class="banner__icons" use="strokeinstagram" />
           </a>
-          <a target="_blank">
-            <at-icons class="banner__icons" use="strokespotify"></at-icons>
+          <a href="#" target="_blank">
+            <at-icons class="banner__icons" use="strokespotify" />
           </a>
         </div>
       </div>

@@ -12,7 +12,7 @@ function style () {
       align-items: center;
     }
 
-    .banner_background {
+    .banner__background {
       filter: brightness(0.5);
       height: 100%;
       object-fit: cover;
@@ -47,7 +47,8 @@ function style () {
         transform: translateY(-10px);
       }
     }
-    .banner_container {
+
+    .banner__container {
       align-items: center;
       display: flex;
       flex-direction: column;
@@ -60,7 +61,7 @@ function style () {
       z-index: 1;
     }
 
-    .banner_social {
+    .banner__social {
       display: flex;
       gap: var(--spacing_inset-xs);
       justify-content: center;

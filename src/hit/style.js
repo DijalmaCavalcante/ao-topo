@@ -1,5 +1,5 @@
 import { css } from '@bake-js/-o-id/dom'
-import background from './background.jpg'
+import background from '../assets/backgroundgrafiato.jpg'
 
 function style () {
   return css`

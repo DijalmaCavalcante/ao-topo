@@ -2,7 +2,6 @@ import "./root.css"
 import "./style.css"
 
 import "./banner"
-import "./container"
 import "./hit"
 import "./icons"
 import "./infomusic"
