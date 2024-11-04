@@ -116,6 +116,7 @@ function style () {
       width: 100%;
       align-items: center;
       opacity: 0.8;
+      height: 60px;
 
       &::before {
         content: "";
@@ -134,7 +135,8 @@ function style () {
     }
 
     .membersdesktop__person {
-      width: 50%;
+      width: 80%;
+      height: 100%;
     }
 
 `

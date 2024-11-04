@@ -10,6 +10,7 @@ function style () {
       overflow: hidden;
       position: relative;
       width: 100%;
+      flex-direction: column;
     }
 
     .membersmobile__background {
@@ -18,6 +19,33 @@ function style () {
       object-fit: cover;
       position: absolute;
       width: 100%;
+    }
+
+    .membersdesktop__title {
+      position: relative;
+      height: 100%;
+      padding-top: var(--spacing_inset-sm);
+      width: 100%;
+      display: flex;
+      align-items: start;
+      justify-content: center;
+      margin-top: var(--spacing-lg);
+    }
+
+    .membersdesktop__line {
+      width: 200px;
+      height: 15px;
+      background-color: var(--color-orange);
+      position: absolute;
+      margin-top: 10px;
+    }
+
+    .membersdesktop__members {
+      position: absolute;
+      color: white;
+      font-size: var(--font-size-md);
+      z-index: 1;
+      top: 0; 
     }
 
     .membersmobile__container {
@@ -49,7 +77,7 @@ function style () {
       height: 42px;
       position: relative;
       border-radius: 50%;
-
+      cursor: pointer;
 
       &::before {
         content: "";
@@ -79,6 +107,8 @@ function style () {
       display: flex;
       padding: var(--spacing_inset-nano) var(--spacing_inset-xs);
       width: 50%;
+      z-index: 1;
+      position: absolute;
     }
 
     .membersmobile__character {

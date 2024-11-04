@@ -13,11 +13,11 @@ function component () {
       <div class="banner_container">
         <at-logo></at-logo>
         <div class="banner_social">
-          <a href=${link.instagram}>
-            <at-icons class="teste" use="strokeinstagram"></at-icons>
+          <a href=${link.instagram} target="_blank">
+            <at-icons class="banner__icons" use="strokeinstagram"></at-icons>
           </a>
-          <a>
-            <at-icons class="teste" use="strokespotify"></at-icons>
+          <a target="_blank">
+            <at-icons class="banner__icons" use="strokespotify"></at-icons>
           </a>
         </div>
       </div>

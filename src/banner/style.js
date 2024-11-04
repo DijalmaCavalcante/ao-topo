@@ -67,7 +67,7 @@ function style () {
       align-items: center;
     }
 
-    .teste {
+    .banner__icons {
       align-self: center;
       background-color: transparent;
       justify-self: center;
@@ -80,7 +80,7 @@ function style () {
       height: 36px;
     }
 
-    .teste:hover {
+    .banner__icons:hover {
       transform: scale(1.1);
       background-color: var(--color-orange);
     }
