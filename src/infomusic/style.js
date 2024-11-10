@@ -7,23 +7,11 @@ function style () {
       background-color: rgba(255, 255, 255, 0.1);
       border-radius: 9px;
       display: flex;
-      flex-direction: column;
-      gap: var(--spacing_inset-xs);
       justify-content: center;
       width: 100%;
     }
 
-    @media(width >= 768px) {
-      .infomusic {
-        align-items: center;
-        display: flex;
-        flex-direction: row;
-        gap: var(--spacing_inset-xs);
-      }
-    }
-
-    .infomusic__details {
-      align-items: center;
+    .infomusic__container {
       display: flex;
       flex-direction: column;
       gap: var(--spacing_inset-xs);
@@ -32,9 +20,8 @@ function style () {
     }
 
     @media(width >= 768px) {
-      .infomusic__details {
+      .infomusic__container {
         flex-direction: row;
-        gap: var(--spacing_inset-xs);
       }
     }
 
@@ -42,23 +29,17 @@ function style () {
       border-radius: 12px;
       max-width: 200px;
       width: 100%;
+      align-self: center;
     }
 
-    .infomusic__container {
+    .infomusic__trackdetails {
       display: flex;
       flex-direction: column;
       gap: var(--spacing_inset-md);
       width: 100%;
     }
 
-    @media(width >= 768px) {
-      .infomusic__container {
-        align-items: start;
-        justify-content: space-between;
-      }
-    }
-
-    .infomusic__name {
+    .infomusic__names {
       align-items: center;
       color: var(--color-pure-white);
       display: flex;
@@ -66,34 +47,60 @@ function style () {
     }
 
     @media(width >= 768px) {
-      .infomusic__name {
+      .infomusic__names {
         align-items: flex-start;
       }
     }
 
-    .infomusic__title {
+    .infomusic__musicname {
       font-size: var(--font-size-xs);
       font-weight: var(--font-weight-medium);
     }
 
     .infomusic__bandname {
       font-size: var(--font-size-nano);
-      margin-bottom: var(--spacing_inset-xs);
     }
 
-    .infomusic__streams {
+    @media (width >= 768px) {
+      .infomusic__bandname {
+        margin-bottom: var(--spacing_inset-xs);
+      }
+    }
+
+    .infomusic__mediacontrols {
       align-items: center;
       display: flex;
       flex-direction: column;
-      gap: var(--spacing_inset-xs);
-      justify-content: center;
+      gap: var(--spacing_inset-sm);
       width: 100%;
     }
 
     @media(width >= 768px) {
-      .infomusic__streams {
+      .infomusic__mediacontrols {
         align-items: start;
         flex-direction: column-reverse;
+        gap: var(--spacing_inset-xs);
+      }
+    }
+
+    .infomusic__player {
+      width: 100%;
+    }
+
+    .informusic__playeractions {
+      align-items: center;
+      display: flex;
+      gap: var(--spacing_inset-md);
+      justify-content: center;
+      width: 100%;
+      flex-direction: column;
+    }
+
+    @media(width >= 768px) {
+      .informusic__playeractions {
+        flex-direction: row;
+        gap: var(--spacing_inset-xs);
+        margin-top: var(--spacing_inset-xs);
       }
     }
 
@@ -110,10 +117,6 @@ function style () {
       .infomusic__icons {
         gap: var(--spacing_inset-nano);
       }
-    }
-
-    .infomusic__player {
-      width: 100%;
     }
   `
 }

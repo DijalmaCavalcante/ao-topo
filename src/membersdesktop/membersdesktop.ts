@@ -10,7 +10,7 @@ class Membersdesktop extends HTMLElement {
   #current
 
   get current () {
-    return (this.#current??= 'kauan')
+    return (this.#current??= 'wallace')
   }
 
   constructor () {

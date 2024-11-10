@@ -1,16 +1,17 @@
-import { paint, repaint } from '@bake-js/-o-id/dom';
+import { paint, didPaint } from '@bake-js/-o-id/dom';
 import component from './component'
 import { define } from '@bake-js/-o-id';
-import style from './style'
-import on from "@bake-js/-o-id/event"
+import style from './style';
+import Echo from '@bake-js/-o-id/echo'
+import { onProgress } from './interfaces'
 
 @define('at-player')
 @paint(component, style)
-class Player extends HTMLElement {
-  #playing;
+class Player extends Echo(HTMLElement) {
+  #audio
 
-  get playing () {
-    return (this.#playing ??= false);
+  get audio () {
+    return (this.#audio ??= this.shadowRoot.querySelector('audio'))
   }
 
   constructor () {
@@ -18,33 +19,32 @@ class Player extends HTMLElement {
     this.attachShadow({ mode: "open" });
   }
 
-  @on.click("#playButton")
-  @repaint
   play () {
-    console.log("play");
-    this.#playing = true
-    
+    this.audio.play()
+    const event = new CustomEvent('play')
+    this.dispatchEvent(event)
+    return this
   }
 
-  @on.click("#pauseButton")
-  @repaint
   pause () {
-    console.log("pause");
-    this.#playing = false
-    
+    this.audio.pause()
+    const event = new CustomEvent('pause')
+    this.dispatchEvent(event)
+    return this
   }
 
-  @on.click("#backButton")
-  back () {
-    console.log("back");
-    
-  }
+  @didPaint
+  [onProgress] () {
+    this.audio.addEventListener('timeupdate', () => {
+      const { currentTime, duration } = this.audio
+      const init = { detail: ((currentTime / duration) * 100).toFixed(2) }
+      const event = new CustomEvent('progress', init)
+      this.dispatchEvent(event)
+    })
 
-  @on.click("#forwardButton")
-  forward () {
-    console.log("forward");
-    
+    return this
   }
+  
 }
 
 export default Player;
