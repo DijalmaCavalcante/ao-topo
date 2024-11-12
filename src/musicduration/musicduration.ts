@@ -1,22 +1,22 @@
+import { attributeChanged, define } from '@bake-js/-o-id';
 import { paint, repaint } from '@bake-js/-o-id/dom';
 import component from './component'
-import { attributeChanged, define } from '@bake-js/-o-id';
-import style from './style'
 import Echo from '@bake-js/-o-id/echo'
+import style from './style'
 
-@define('at-progress')
+@define('at-music-duration')
 @paint(component, style)
-class Progress extends Echo(HTMLElement) {
+class Musicduration extends Echo(HTMLElement) {
   #value
 
   @attributeChanged('value')
   @repaint
-  set value (value) {    
-    this.#value = value
+  set value(value) {
+    this.#value = value;
   }
 
   get value () {
-    return this.#value ??= 0
+    return this.#value ??= '0:00'
   }
 
   constructor () {
@@ -26,5 +26,5 @@ class Progress extends Echo(HTMLElement) {
 
 }
 
-export default Progress;
+export default Musicduration;
 

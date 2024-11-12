@@ -35,11 +35,20 @@ class Player extends Echo(HTMLElement) {
 
   @didPaint
   [onProgress] () {
+    let lastTime = 0; // Armazena o tempo da última atualização
+
     this.audio.addEventListener('timeupdate', () => {
-      const { currentTime, duration } = this.audio
-      const init = { detail: ((currentTime / duration) * 100).toFixed(2) }
-      const event = new CustomEvent('progress', init)
-      this.dispatchEvent(event)
+      const { currentTime, duration } = this.audio;
+      const currentTimeInSeconds = Math.floor(currentTime); // Arredonda para segundos inteiros
+      const init = { detail: ((currentTimeInSeconds / duration) * 100).toFixed(2) };
+  
+      // Só dispara o evento se passou 1 segundo desde a última atualização
+      if (currentTimeInSeconds !== lastTime) {
+        lastTime = currentTimeInSeconds; // Atualiza o último tempo
+  
+        const event = new CustomEvent('progress', init);
+        this.dispatchEvent(event);
+      }
     })
 
     return this
