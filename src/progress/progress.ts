@@ -1,6 +1,6 @@
 import { paint, repaint } from '@bake-js/-o-id/dom';
 import component from './component'
-import { attributeChanged, define } from '@bake-js/-o-id';
+import { attributeChanged, define, on } from '@bake-js/-o-id';
 import style from './style'
 import Echo from '@bake-js/-o-id/echo'
 
@@ -22,6 +22,14 @@ class Progress extends Echo(HTMLElement) {
   constructor () {
     super();
     this.attachShadow({ mode: "open" });
+  }
+
+  @on.click(":host *")
+  click () {
+    const event = new CustomEvent("clicked")
+    this.dispatchEvent(event)
+
+    return this
   }
 
 }

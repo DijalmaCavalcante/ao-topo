@@ -1,6 +1,5 @@
 import { html } from '@bake-js/-o-id/dom';
 import background from './background.png';
-import music from './music.mp3'
 
 function component () {  
   return html`
@@ -27,12 +26,15 @@ function component () {
                 <id-echo-source on="at-player/play:method/show"></id-echo-source>
                 <id-echo-source on="at-player/pause:method/hide"></id-echo-source>
               </at-pause>
-              <at-progress>
-                <at-music-duration>
+              <div style="display:flex; flex-direction:column; width:100%; gap:8px; margin-top:22px;">
+                <at-progress>
                   <id-echo-source on="at-player/progress:attribute/value"></id-echo-source>
+                </at-progress>
+                <at-music-duration>
+                  <id-echo-source on="at-player/time:attribute/time|prop=currentTime"></id-echo-source>
+                  <id-echo-source on="at-player/time:attribute/duration|prop=duration"></id-echo-source>
                 </at-music-duration>
-                <id-echo-source on="at-player/progress:attribute/value"></id-echo-source>
-              </at-progress>
+              </div>
             </div>
             <div class="infomusic__icons">
               <a href="#"> <at-icons use="spotify" aria-label="spotify"/> </a>

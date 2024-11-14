@@ -7,22 +7,24 @@ import style from './style'
 @define('at-music-duration')
 @paint(component, style)
 class Musicduration extends Echo(HTMLElement) {
-  #value
+  #time
 
-  @attributeChanged('value')
+  @attributeChanged('time')
   @repaint
-  set value(value) {
-    this.#value = value;
+  set time(value) {
+    this.#time = value;
   }
 
-  get value () {
-    return this.#value ??= '0:00'
+  get time () {
+    return this.#time ??= '0:00'
   }
 
   constructor () {
     super();
     this.attachShadow({ mode: "open" });
   }
+
+  
 
 }
 

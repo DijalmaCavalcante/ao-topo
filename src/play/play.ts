@@ -17,7 +17,7 @@ class Play extends Echo(HTMLElement) {
   }
 
   @on.click(":host *")
-  click () {    
+  click () {
     const event = new CustomEvent("clicked")
     this.dispatchEvent(event)
     return this

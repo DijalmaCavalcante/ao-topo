@@ -3,7 +3,7 @@ import component from './component'
 import { define } from '@bake-js/-o-id';
 import style from './style';
 import Echo from '@bake-js/-o-id/echo'
-import { onProgress } from './interfaces'
+import { onProgress, onMusicduration } from './interfaces'
 
 @define('at-player')
 @paint(component, style)
@@ -41,14 +41,31 @@ class Player extends Echo(HTMLElement) {
       const { currentTime, duration } = this.audio;
       const currentTimeInSeconds = Math.floor(currentTime); // Arredonda para segundos inteiros
       const init = { detail: ((currentTimeInSeconds / duration) * 100).toFixed(2) };
-  
-      // Só dispara o evento se passou 1 segundo desde a última atualização
+
       if (currentTimeInSeconds !== lastTime) {
-        lastTime = currentTimeInSeconds; // Atualiza o último tempo
+        lastTime = currentTimeInSeconds;
   
         const event = new CustomEvent('progress', init);
         this.dispatchEvent(event);
       }
+    })
+
+    return this
+  }
+
+  @didPaint
+  [onMusicduration] () {
+    function formatTime(time) {
+      const minutes = Math.floor(time / 60);
+      const seconds = Math.floor(time % 60).toString().padStart(2, '0');
+      return `${minutes}:${seconds}`;
+    }
+
+    this.audio.addEventListener('timeupdate', () => {
+      const { currentTime, duration } = this.audio;
+      const init = { detail: {currentTime: formatTime(currentTime), duration: formatTime(duration)} }
+      const event = new CustomEvent('time', init);
+      this.dispatchEvent(event);
     })
 
     return this

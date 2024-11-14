@@ -100,7 +100,6 @@ function style () {
       .informusic__playeractions {
         flex-direction: row;
         gap: var(--spacing_inset-xs);
-        margin-top: var(--spacing_inset-xs);
       }
     }
 
