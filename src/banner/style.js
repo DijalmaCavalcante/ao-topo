@@ -61,13 +61,6 @@ function style () {
       z-index: 1;
     }
 
-    .banner__social {
-      display: flex;
-      gap: var(--spacing_inset-xs);
-      justify-content: center;
-      align-items: center;
-    }
-
     .banner__icons {
       align-self: center;
       background-color: transparent;
