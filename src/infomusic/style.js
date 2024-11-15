@@ -90,7 +90,7 @@ function style () {
     .informusic__playeractions {
       align-items: center;
       display: flex;
-      gap: var(--spacing_inset-md);
+      gap: var(--spacing_inset-xs);
       justify-content: center;
       width: 100%;
       flex-direction: column;
@@ -115,6 +115,19 @@ function style () {
     @media(width >= 768px) {
       .infomusic__icons {
         gap: var(--spacing_inset-nano);
+      }
+    }
+
+    .infomusic__progress {
+      display:flex; 
+      flex-direction:column; 
+      width:100%; 
+      gap:var(--spacing_inset-quarck);
+    }
+
+    @media(width >= 768px) {
+      .infomusic__progress {
+        margin-top:22px;
       }
     }
   `

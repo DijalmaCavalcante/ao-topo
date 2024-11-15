@@ -26,7 +26,7 @@ function component () {
                 <id-echo-source on="at-player/play:method/show"></id-echo-source>
                 <id-echo-source on="at-player/pause:method/hide"></id-echo-source>
               </at-pause>
-              <div style="display:flex; flex-direction:column; width:100%; gap:8px; margin-top:22px;">
+              <div class="infomusic__progress">
                 <at-progress>
                   <id-echo-source on="at-player/progress:attribute/value"></id-echo-source>
                 </at-progress>
