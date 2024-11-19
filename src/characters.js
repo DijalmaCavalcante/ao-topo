@@ -1,46 +1,83 @@
-import benePerson from "../assets/bene.png"
-import beneName from "../assets/beneName.png"
-import dijalmaPerson from "../assets/dijalma.png"
-import dijalmaName from "../assets/dijalmaName.png"
-import kauanPerson from "../assets/kauan.png"
-import kauanName from "../assets/kauanName.png"
-import wallacePerson from "../assets/wallace.png"
-import wallaceName from "../assets/wallaceName.png"
-import lucasPerson from "../assets/lucas.png"
-import lucasName from "../assets/lucasName.png"
-import bene1 from './assets/bene1.jpg';
-import bene2 from './assets/bene2.jpg';
+import benePerson from "./assets/bene.png";
+import beneRelato from "./assets/beneRelato.png";
+import beneName from "./assets/beneName.png";
+import dijalmaPerson from "./assets/dijalma.png";
+import dijalmaRelato from "./assets/dijalmaRelato.png";
+import dijalmaName from "./assets/dijalmaName.png";
+import kauanPerson from "./assets/kauan.png";
+import kauanName from "./assets/kauanName.png";
+import kauanRelato from "./assets/kauanRelato.png";
+import wallacePerson from "./assets/wallace.png";
+import wallaceRelato from "./assets/wallaceRelato.png";
+import wallaceName from "./assets/wallaceName.png";
+import lucasPerson from "./assets/lucas.png";
+import lucasRelato from "./assets/lucasRelato.png";
+import lucasName from "./assets/lucasName.png";
 
-
-const characters = [
+const charactersArray = [
   {
     name: "bene",
     person: benePerson,
+    description: beneRelato,
     risk: beneName,
-    image1: bene1,
-    image2: bene2,
   },
   {
     name: "dijalma",
     person: dijalmaPerson,
-    risk: dijalmaName
+    description: dijalmaRelato,
+    risk: dijalmaName,
   },
   {
     name: "wallace",
     person: wallacePerson,
-    risk: wallaceName
+    description: wallaceRelato,
+    risk: wallaceName,
   },
   {
     name: "kauan",
     person: kauanPerson,
-    risk: kauanName
+    description: kauanRelato,
+    risk: kauanName,
   },
   {
     name: "lucas",
     person: lucasPerson,
-    risk: lucasName
-  }
+    description: lucasRelato,
+    risk: lucasName,
+  },
 ];
 
-export default characters;
+const characters = {
+  bene: {
+    name: "bene",
+    description: beneRelato,
+    person: benePerson,
+    risk: beneName,
+  },
+  dijalma: {
+    name: "dijalma",
+    description: dijalmaRelato,
+    person: dijalmaPerson,
+    risk: dijalmaName,
+  },
+  wallace: {
+    name: "wallace",
+    description: wallaceRelato,
+    person: wallacePerson,
+    risk: wallaceName,
+  },
+  kauan: {
+    name: "kauan",
+    description: kauanRelato,
+    person: kauanPerson,
+    risk: kauanName,
+  },
+  lucas: {
+    name: "lucas",
+    description: lucasRelato,
+    person: lucasPerson,
+    risk: lucasName,
+  },
+};
 
+export { charactersArray, characters };
