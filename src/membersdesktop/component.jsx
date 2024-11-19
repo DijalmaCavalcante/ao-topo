@@ -1,6 +1,6 @@
 import { html } from '@bake-js/-o-id/dom';
 import background from './background.jpg'
-import characters from './characters'
+import { characters } from '../characters'
 
 function component (self) {  
   return html`

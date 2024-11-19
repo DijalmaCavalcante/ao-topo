@@ -15,8 +15,8 @@ function component (self) {
           <at-icons class="membersmobile__action" use="arrowright" id="next"></at-icons>
         </div>
         <div class="membersmobile__persons">
-          <img class="membersmobile__character" src="${self.characters.person}" />
-          <img class="membersmobile__risk" src="${self.characters.risk}" />
+          <img class="membersmobile__character" src="${self.charactersArray.person}" />
+          <img class="membersmobile__risk" src="${self.charactersArray.risk}" />
         </div>
       </div>
     </section>

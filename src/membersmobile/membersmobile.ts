@@ -3,14 +3,14 @@ import { paint, repaint } from "@bake-js/-o-id/dom";
 import component from "./component";
 import style from "./style";
 import on from "@bake-js/-o-id/event";
-import characters from './characters';
+import { charactersArray } from '../characters';
 
 @define('at-members-mobile')
 @paint(component, style)
 class Membersmobile extends HTMLElement {
 
-  get characters () {
-    return characters[0];
+  get charactersArray () {
+    return charactersArray[0];
   }
 
   constructor () {
@@ -21,13 +21,13 @@ class Membersmobile extends HTMLElement {
   @repaint
   @on.click("#prev")
   onPrev() {
-    characters.unshift(characters.pop() as any);
+    charactersArray.unshift(charactersArray.pop() as any);
   }
 
   @repaint
   @on.click("#next")
   onNext() {
-    characters.push(characters.shift() as any);
+    charactersArray.push(charactersArray.shift() as any);
   }
 }
 
